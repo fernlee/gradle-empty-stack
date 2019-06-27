@@ -8,10 +8,11 @@ public class App {
 
     public static void main(String[] args) {
         String inputMessage = "hello";
-        Mobile mobile = new Mobile();
+        Mobile mobile = new Mobile("name", "blue", "HUAWEI");
         IPhone iPhone = new IPhone();
         Andriod andriodMobile = new Andriod();
         mobile.makeACall(inputMessage);
+        mobile.printBasicInfo();
         iPhone.makeACall(inputMessage);
         andriodMobile.makeACall(inputMessage);
         System.out.println(new App().getGreeting());
