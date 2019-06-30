@@ -7,13 +7,14 @@ public class App {
     }
 
     public static void main(String[] args) {
+        String longInputMessage = "hello, my name is ";
         String inputMessage = "hello";
-        Mobile mobile = new Mobile("name", "blue", "HUAWEI");
-        IPhone iPhone = new IPhone();
+        Mobile mobile = new Mobile("name", "blue", "HUAWEI", 10);
+        IPhone iPhone = new IPhone("name", "blue", "HUAWEI", 10);
         Andriod andriodMobile = new Andriod();
-        mobile.makeACall(inputMessage);
+        mobile.makeACall(longInputMessage);
         mobile.printBasicInfo();
-        iPhone.makeACall(inputMessage);
+        iPhone.makeACall(longInputMessage);
         andriodMobile.makeACall(inputMessage);
         System.out.println(new App().getGreeting());
     }

@@ -6,12 +6,12 @@ public class IPhone extends Mobile {
 
     }
 
-    public IPhone(String name, String color, String brand) {
-        super(name, color, brand);
+    public IPhone(String name, String color, String brand, int messageLengthLimit) {
+        super(name, color, brand, messageLengthLimit);
     }
 
     @Override
     public void makeACall(String message) {
-        System.out.println("<IPhone>Message : " + message);
+        super.makeACall(message, "iPhone");
     }
 }

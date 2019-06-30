@@ -5,12 +5,12 @@ public class Andriod extends Mobile {
     public Andriod() {
 
     }
-    public Andriod(String name, String color, String brand) {
-        super(name, color, brand);
+    public Andriod(String name, String color, String brand, int messageLengthLimit) {
+        super(name, color, brand, messageLengthLimit);
     }
 
     @Override
     public void makeACall(String message) {
-        System.out.println("<Andriod>Message : " + message);
+        super.makeACall(message, "Andriod");
     }
 }
