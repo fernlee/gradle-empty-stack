@@ -10,4 +10,12 @@ public class Person {
         this.mobile = mobile;
     }
 
+    public void makeACall(String message) {
+        mobile.makeACall(message);
+    }
+
+
+    public void setMobile(Mobile mobile) {
+        this.mobile = mobile;
+    }
 }
